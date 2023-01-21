@@ -1,0 +1,418 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: 0.2s;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    /* overflow-x: hidden; */
+}
+
+:root{
+    --orange: #ff7800;
+    --lightcolor:#666;
+    --black:#130f40
+}
+
+
+/* Header section */
+.header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 7%;
+    align-items: center;
+    position: fixed;
+}
+
+
+#logo{
+  font-size: 2.5rem;
+  color: var(--black);
+}
+
+#logo span{
+    color: var(--orange);
+}
+
+.icons #menu-bars{
+    color: var(--orange);
+    font-size: 2rem;
+}
+
+.navbar{
+    width: 30rem;
+    height: 100vh;
+    position: absolute;
+    top: 100%;
+    background-color: var(--orange);
+    left: 100%;
+    transition: 0.5s;
+}
+
+.navbar.active{
+    left: 0;
+}
+.navbar a{
+    display: block;
+    margin: 1rem;
+    padding: 1rem;
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+
+.bg_Image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('./images/Replace\ your\ Image.png');
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.innerTxtBg {
+    text-align: center;
+}
+
+.bg_Image .innerTxtBg h2{
+   color: #fff;
+   font-size: 40px;
+
+}
+
+.bg_Image  .innerTxtBg h1{
+    color: var(--orange);
+    font-size: 70px;
+}
+
+.bg_Image .innerTxtBg h3{
+    color: #fff;
+    font-size: 30px;
+}
+
+
+
+.ourWork{
+    padding: 5rem 7%;
+    background-color: var(--orange);
+
+}
+.ourWork #readBtn{
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: #fff;
+    cursor: pointer;
+}
+.main_we_do{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.inner_we_do{
+   flex: 1 1 45rem;
+}
+.inner_we_do img{
+    width: 40%;
+}
+
+.we_doImg{
+    text-align: center;
+}
+.inner_we_do h1{
+    color: var(--black);
+    font-size: 40px;
+}
+
+.inner_we_do p{
+    color: #fff;
+    font-size: 1.5rem;
+    padding: 1rem 0;
+    margin-bottom: 25px;
+}
+
+.inner_we_do a{
+    padding: 2rem 4rem;
+    background: var(--black);
+    color: var(--lightcolor);
+    font-size: 1.5rem;
+    border-radius: 15px;
+} 
+.readBtn{
+
+}
+
+
+/* Services  */
+
+.our_Service{
+  padding: 3rem 7%;
+}
+.our_Service h1{
+    color: var(--black);
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 25px;
+}
+
+.our_Service h1 span{
+    color: var(--orange);
+}
+
+.man_Services{
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+   gap: 10px;
+   cursor: pointer;
+}
+
+.inner_Services{
+    flex: 1 1 300px;
+    padding: 2rem 3rem;
+    text-align: center;
+    box-shadow: 1.95px 1.95px 2.6px rgba(0,0,0, 0.15);
+} 
+
+.inner_Services:hover{
+    transition: 0.2s ease-in;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;} 
+
+.inner_Services .service_Icons{
+    width: 50px;
+    height: 50px;
+    background: var(--black);
+    line-height: 50px;
+    text-align: center;
+    border-radius: 100%;
+    margin: 0 auto;
+    margin-bottom: 15px;
+}
+
+.inner_Services .service_Icons i{
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+.inner_Services p{
+    padding: 0 2rem;
+    font-size: 1.5rem;
+}
+
+
+/* Gallery Section */
+
+
+.gallery{
+  padding: 4rem 7%;
+}
+
+.gallery h1{
+    font-size: 40px;
+    text-align: center;
+    color: var(--black);
+    margin-bottom: 25px;
+    
+}
+
+.gallery h1 span{
+    color: var(--orange);
+}
+
+.main_Gallery{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-wrap: wrap;
+   gap: 15px;
+}
+
+.inner_Gallery{
+    flex: 1 1 300px;
+    
+}
+.inner_Gallery img{
+    width: 100%;
+    object-fit: cover;
+    border-radius: 3px;
+}
+
+
+/* Clients Section */
+
+.our_clients{
+  padding: 3rem 7%;
+}
+.our_clients h1{
+   color: var(--black);
+   font-size: 40px;
+   text-align: center;
+   margin-bottom: 25px;
+}
+
+.our_clients h1 span{
+  color: var(--orange);
+}
+
+
+.main_Clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+
+}
+
+.inner_Clients{
+  flex-basis: 20%;
+  text-align: center;
+}
+.inner_Clients img{
+    width: 50%;
+}
+
+/* Contact section */
+.contact_Section{
+    padding: 2rem 7%;
+    width: 100%;
+    display: flex;
+    background: #f8f5f5;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact_Info{
+  color: #000;
+  line-height: 65px;
+  padding-left: 50px;
+  font-size: 18px;
+}
+
+.contact_Info i{
+      margin-right: 25px;
+      color: #FFB26B;
+      font-size: 25px;
+}
+
+.contact_Form{
+  max-width: 700px;
+  margin-right: 50px;
+}
+
+.contact_Form, .contact_Info{
+  flex: 1;
+}
+
+.contact_Form h2{
+    color: var(--orange);
+    text-align: center;
+    font-size: 35px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.contact_Form .text-box{
+    background: #000;
+    color: #fff;
+    border: none;
+    width: calc(50%-10px);
+    height: 50px;
+    padding: 12px;
+    font-size: 15px;
+    border-radius: 5px;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+    opacity: 0.9;
+}
+
+.contact_Form .text-box:first-child{
+    margin-right: 15px;
+}
+
+.contact_Form .mytextarea{
+    width: 90%;
+    min-height: 200px;
+    max-height: 400px;
+    background: #000;
+    color: #fff;
+    border: none;
+    padding: 12px;
+    font-size: 15px;
+    resize: vertical;
+    border-radius: 5px; 
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+    opacity: 0.9;
+}
+
+.contact_Form .send_Btn{
+    width: 120px;
+    height: 40px ;
+    float: right;
+    background: var(--orange);
+    color: #fff;
+    border: none;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-radius: 5px;
+    transition: 0.3s;
+    transition-property: 0.3s;
+}
+
+.contact_Form .send_Btn:hover{
+       background: #FF4C29;
+}
+
+footer{
+    width: 100%;
+    background: var(--black);
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+
+/* Responsive */
+
+
+@media (max-width:  768px){
+    html{
+        font-size: 55%;
+    }
+    .contact_Section{
+        width: 100%;
+        flex-direction: column;
+    }
+    .contact_Form .send_Btn{
+        float: left;
+    }
+    .contact_Form .text-box{
+        width: 100%;
+    }
+    .contact_Form .mytextarea{
+        width: 100%;
+    }
+    .contact_Form h2{
+        padding: 10px 0;
+    }
+}
